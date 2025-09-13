@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CrudPanelPrincipalController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Productos">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Producto Congelado" />
+                  <MenuItem mnemonicParsing="false" text="Producto Fresco" />
+                  <MenuItem mnemonicParsing="false" text="Producto Refrigerado" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="137.0" layoutY="63.0" text="Gestionando Productos">
+         <font>
+            <Font name="Corbel Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e3e3" height="174.0" layoutX="37.0" layoutY="124.0" opacity="0.73" stroke="#c4a925" strokeType="INSIDE" width="522.0" />
+      <Label layoutX="65.0" layoutY="151.0" text="Selecciona los productos:">
+         <font>
+            <Font name="Corbel Italic" size="18.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="277.0" layoutY="187.0" mnemonicParsing="false" text="Productos">
+        <items>
+          <MenuItem mnemonicParsing="false" text="1) Congelado" />
+          <MenuItem mnemonicParsing="false" text="2) Fresco" />
+            <MenuItem mnemonicParsing="false" text="3) Refrigerado" />
+        </items>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MenuButton>
+   </children>
+</AnchorPane>
