@@ -5,10 +5,10 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CrudPanelPrincipalController">
    <children>
@@ -16,9 +16,18 @@
         <menus>
           <Menu mnemonicParsing="false" text="Productos">
             <items>
-              <MenuItem mnemonicParsing="false" text="Producto Congelado" />
-                  <MenuItem mnemonicParsing="false" text="Producto Fresco" />
-                  <MenuItem mnemonicParsing="false" text="Producto Refrigerado" />
+              <MenuItem mnemonicParsing="false" onAction="#cambiarPanelCongelados" text="Producto Congelado">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="DIGIT1" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#cambiarPanelFrescos" text="Producto Fresco">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="DIGIT2" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#cambiarPanelRefrigerados" text="Producto Refrigerado">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="DIGIT3" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
             </items>
           </Menu>
         </menus>
@@ -36,9 +45,9 @@
       </Label>
       <MenuButton layoutX="277.0" layoutY="187.0" mnemonicParsing="false" text="Productos">
         <items>
-          <MenuItem mnemonicParsing="false" text="1) Congelado" />
-          <MenuItem mnemonicParsing="false" text="2) Fresco" />
-            <MenuItem mnemonicParsing="false" text="3) Refrigerado" />
+          <MenuItem mnemonicParsing="false" onAction="#cambiarPanelCongelados" text="1) Congelado" />
+          <MenuItem mnemonicParsing="false" onAction="#cambiarPanelFrescos" text="2) Fresco" />
+            <MenuItem mnemonicParsing="false" onAction="#cambiarPanelRefrigerados" text="3) Refrigerado" />
         </items>
          <font>
             <Font size="16.0" />
