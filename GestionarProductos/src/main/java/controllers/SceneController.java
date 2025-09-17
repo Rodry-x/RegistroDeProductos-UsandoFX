@@ -1,5 +1,7 @@
 
 package controllers;
+
+// Importaciones necesarias para la aplicación
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -12,6 +14,7 @@ import java.io.IOException;
 
 public class SceneController {
 
+    // Método para obtener la ventana actual
     private Stage getStageFromEvent(ActionEvent event) {
         Object source = event.getSource();
         if (source instanceof Node) {
@@ -25,6 +28,7 @@ public class SceneController {
         }
     }
 
+    // Método para cambiar de escena
     private void cambiarEscena(ActionEvent event, String fxmlPath) {
         try {
             Parent root = FXMLLoader.load(getClass().getResource(fxmlPath));
@@ -39,6 +43,7 @@ public class SceneController {
         }
     }
 
+    // Usando Paths para abreviar las rutas de los archivos FXML
     public void cambiarPanelCongelados(ActionEvent event) {
         cambiarEscena(event, Paths.PRODUCTOS_CONGELADOS_FXML);
     }

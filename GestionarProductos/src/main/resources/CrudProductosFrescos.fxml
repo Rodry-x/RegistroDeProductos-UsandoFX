@@ -41,17 +41,17 @@
             <Font name="Corbel Italic" size="16.0" />
          </font>
       </Label>
-      <Button layoutX="25.0" layoutY="274.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Calcular" />
-      <Button layoutX="137.0" layoutY="274.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Limpiar" />
+      <Button layoutX="25.0" layoutY="274.0" mnemonicParsing="false" onAction="#guardarDatosEnLista" prefHeight="26.0" prefWidth="90.0" text="Calcular" />
+      <Button layoutX="137.0" layoutY="274.0" mnemonicParsing="false" onAction="#limpiarTextField" prefHeight="26.0" prefWidth="90.0" text="Limpiar" />
       <Button layoutX="271.0" layoutY="273.0" mnemonicParsing="false" onAction="#cambiarAlPanelPrincipal" prefHeight="26.0" prefWidth="74.0" text="Salir">
          <font>
             <Font size="13.0" />
          </font></Button>
-      <ListView layoutX="362.0" layoutY="48.0" prefHeight="252.0" prefWidth="200.0" />
-      <TextField layoutX="183.0" layoutY="65.0" />
-      <TextField layoutX="183.0" layoutY="99.0" />
-      <TextField layoutX="183.0" layoutY="134.0" />
-      <TextField layoutX="183.0" layoutY="170.0" />
-      <TextField layoutX="182.0" layoutY="204.0" />
+      <ListView fx:id="lstVwProductoFresco" layoutX="362.0" layoutY="48.0" prefHeight="252.0" prefWidth="200.0" />
+      <TextField fx:id="txtNombre" layoutX="183.0" layoutY="65.0" />
+      <TextField fx:id="txtFechaDeCaducidad" layoutX="183.0" layoutY="99.0" />
+      <TextField fx:id="txtNumDeLote" layoutX="183.0" layoutY="134.0" />
+      <TextField fx:id="txtFechaDeEnvasado" layoutX="183.0" layoutY="170.0" />
+      <TextField fx:id="txtPaisDeOrigen" layoutX="182.0" layoutY="204.0" />
    </children>
 </AnchorPane>
