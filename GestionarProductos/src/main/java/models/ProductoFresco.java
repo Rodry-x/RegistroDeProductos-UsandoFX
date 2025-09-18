@@ -33,7 +33,7 @@ public class ProductoFresco extends Producto {
     //Devolviendo los atributos de la clase
     @Override
     public String toString() {
-        return super.toString() + ", Fecha de Envasado: " + fechaDeEnvasado + ", País de Origen: " + paisDeOrigen;
+        return super.toString() + "\nFecha de Envasado: " + fechaDeEnvasado + "\nPaís de Origen: " + paisDeOrigen;
     }
 
 }

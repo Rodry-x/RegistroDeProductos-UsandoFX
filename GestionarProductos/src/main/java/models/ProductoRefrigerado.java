@@ -22,6 +22,6 @@ public class ProductoRefrigerado extends Producto{
     //Devolviendo los atributos de la clase
     @Override
     public String toString() {
-        return super.toString() + ", Código DIGESA: " + codigoDigesa;
+        return super.toString() + "\nCódigo DIGESA: " + codigoDigesa;
     }
 }

@@ -23,6 +23,6 @@ public class ProductoCongelado extends Producto {
     //Devolviendo los atributos de la clase
     @Override
     public String toString() {
-        return super.toString() + ", Temperatura de Congelación Recomendada: " + getTemperaturaCongelacionRecomendada();
+        return super.toString() + "\nTemperatura de Congelación Recomendada: " + getTemperaturaCongelacionRecomendada();
     }
 }

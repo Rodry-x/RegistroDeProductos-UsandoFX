@@ -40,7 +40,7 @@ public class Producto {
     //Devolviendo los atributos de la clase
     @Override
     public String toString() {
-        return "Nombre: " + nombre + ", Caducidad: " + fechaDeCaducidad + ", Lote: " + numeroDeLote;
+        return "Nombre: " + nombre + "\nCaducidad: " + fechaDeCaducidad + "\nLote: " + numeroDeLote;
     }
 
 }
